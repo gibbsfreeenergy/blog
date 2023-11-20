@@ -254,11 +254,11 @@ export default {
       listButtonActiveIndex: -1,
       thisListPage: 1,
       musicTypeList: [
+        { name: "My Songs", id: 8612371156 },
         { name: "热歌榜", id: 3778678 },
         { name: "新歌榜", id: 3779629 },
         { name: "飙升榜", id: 19723756 },
-        { name: "嘻哈榜", id: 991319590 },
-        { name: "My Songs", id: -1 }
+        { name: "嘻哈榜", id: 991319590 }
       ],
       thisMusicType: -1,
       notPlay: [],
@@ -277,8 +277,7 @@ export default {
     this.Player();
   },
   created() {
-    this._getMusicType(3779629);
-    this.DisAuthorInfo(); //禁删~感谢配合
+    this._getMusicType(8612371156);
   },
   computed: {
     thisMusicList() {
@@ -301,13 +300,6 @@ export default {
     }
   },
   methods: {
-    //禁删~感谢配合
-    DisAuthorInfo() {
-      console.log(
-        "%c音乐播放器作者----仲威，博客地址：https://blogme.top",
-        "background-color:rgb(30,30,30);border-radius:4px;font-size:12px;padding:4px;color:rgb(220,208,129);"
-      );
-    },
     MusicAlert(val) {
       this.musicAlertState = true;
       this.musicAlertVal = val;

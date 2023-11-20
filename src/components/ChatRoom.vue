@@ -12,7 +12,7 @@
         <img
           width="32"
           height="32"
-          src="https://img.51miz.com/preview/element/00/01/04/46/E-1044689-C1B529F6.jpg"
+          src="https://neverpast.obs.cn-north-1.myhuaweicloud.com/other/ChatRoom.png"
         />
         <div style="margin-left:12px">
           <div>聊天室</div>
@@ -144,9 +144,9 @@
     <div class="chat-btn" @click="open">
       <span class="unread" v-if="unreadCount > 0">{{ unreadCount }}</span>
       <img
-        width="100%"
-        height="100%"
-        src="https://img.51miz.com/preview/element/00/01/04/46/E-1044689-C1B529F6.jpg"
+        width=100%
+        height=100%
+        src="https://neverpast.obs.cn-north-1.myhuaweicloud.com/other/ChatRoom.png"
       />
     </div>
   </div>
@@ -519,12 +519,12 @@ export default {
   z-index: 1200;
 }
 .chat-btn {
-  background: #1f93ff;
+  /* background: #ffffff; */
   border-radius: 100px !important;
   position: fixed;
   bottom: 15px;
   right: 5px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.9) !important;
   cursor: pointer;
   height: 60px !important;
   width: 60px !important;
