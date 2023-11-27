@@ -240,8 +240,8 @@ export default {
       this.$refs.reply[index].index = index;
       this.$refs.reply[index].$el.style.display = "block";
     },
-    addEmoji(key) {
-      this.commentContent += key;
+    addEmoji(value) {
+      this.commentContent += value;
     },
     checkReplies(index, item) {
       this.axios
@@ -310,14 +310,14 @@ export default {
         return false;
       }
       //解析表情
-      var reg = /\[.+?\]/g;
-      this.commentContent = this.commentContent.replace(reg, function(str) {
-        return (
-          "<img src= '" +
-          EmojiList[str] +
-          "' width='24'height='24' style='margin: 0 1px;vertical-align: text-bottom'/>"
-        );
-      });
+      // var reg = /\[.+?\]/g;
+      // this.commentContent = this.commentContent.replace(reg, function(str) {
+      //   return (
+      //     "<img src= '" +
+      //     EmojiList[str] +
+      //     "' width='24'height='24' style='margin: 0 1px;vertical-align: text-bottom'/>"
+      //   );
+      // });
       //发送请求
       const path = this.$route.path;
       const arr = path.split("/");
