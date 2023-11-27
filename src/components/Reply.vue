@@ -30,7 +30,6 @@
 
 <script>
 import Emoji from "./Emoji";
-import EmojiList from "../assets/js/emoji";
 export default {
   components: {
     Emoji
