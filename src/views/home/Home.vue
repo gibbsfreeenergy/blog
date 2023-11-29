@@ -263,13 +263,14 @@ export default {
     init() {
       document.title = this.blogInfo.websiteConfig.websiteName;
       // 一言Api进行打字机循环输出效果
-      fetch("https://v1.hitokoto.cn?c=i")
-        .then(res => {
-          return res.json();
-        })
-        .then(({ hitokoto }) => {
-          this.initTyped(hitokoto);
-        });
+      // fetch("https://v1.hitokoto.cn?c=i")
+      //   .then(res => {
+      //     return res.json();
+      //   })
+      // .then(({ hitokoto }) => {
+      //   this.initTyped(hitokoto);
+      // });
+      this.initTyped("为你，千千万万遍。");
     },
     listHomeTalks() {
       this.axios.get("/api/home/talks").then(({ data }) => {

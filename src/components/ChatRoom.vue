@@ -12,7 +12,7 @@
         <img
           width="32"
           height="32"
-          src="https://neverpast.obs.cn-north-1.myhuaweicloud.com/other/ChatRoom.png"
+          src="https://neverpast.obs.cn-north-1.myhuaweicloud.com/other/ChatRoom.svg"
         />
         <div style="margin-left:12px">
           <div>聊天室</div>
@@ -144,9 +144,9 @@
     <div class="chat-btn" @click="open">
       <span class="unread" v-if="unreadCount > 0">{{ unreadCount }}</span>
       <img
-        width=100%
-        height=100%
-        src="https://neverpast.obs.cn-north-1.myhuaweicloud.com/other/ChatRoom.png"
+        width="100%"
+        height="100%"
+        src="https://neverpast.obs.cn-north-1.myhuaweicloud.com/other/ChatRoom.svg"
       />
     </div>
   </div>
