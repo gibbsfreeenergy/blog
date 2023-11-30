@@ -12,6 +12,9 @@
           <img class="author-avatar" :src="avatar" />
         </v-avatar>
       </div>
+      <!-- <div>
+        <train-ticket-card trainNumber="G123" departureStation="北京" arrivalStation="上海" departureTime="09:00" arrivalTime="13:30"/>
+      </div> -->
       <!-- 介绍 -->
       <div
         ref="about"
@@ -24,6 +27,7 @@
 
 <script>
 import Clipboard from "clipboard";
+// import TrainTicketCard from "@/components/TrainTicketCard.vue";
 export default {
   created() {
     this.getAboutContent();
@@ -31,6 +35,9 @@ export default {
   destroyed() {
     this.clipboard.destroy();
   },
+  // components: {
+  //   TrainTicketCard
+  // },
   data: function() {
     return {
       aboutContent: "",
